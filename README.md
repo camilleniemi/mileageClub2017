@@ -1,2 +1,3 @@
 # mileageClub2017
-Organizing fellows 2017 mileage club info
+
+Organizing the Mary Greeley Mileage Club for Fellows Elementary 2017
