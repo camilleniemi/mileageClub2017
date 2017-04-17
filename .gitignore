@@ -37,3 +37,4 @@ vignettes/*.pdf
 # Avoid commiting sensitive information
 Fellows\ Mileage\ Club\ 2_21_17.xlsx
 id.csv
+temp/
