@@ -26,7 +26,7 @@ summary(cards, ids)
 # 4) Create 10-mile Certificates
 #    a) Run summary line, click open in browser
 #    b) Save appropriate certificate file on 'Certificate' tab
-#    c) In R, right bottom corner, Click on mileage_club/certificates/10mile.dotx and say 'No'
+#    c) In R, right bottom corner, Click on mileageClub2017/certificates/10mile.dotx and say 'No'
 #    d) Click 'Mailings' and 'Select Receipts > Use an existing list...'
 #    e) Open saved file from a), most likely in Downloads
 #    f) Preview Results, Click Finish & Merge, print documents, select All and click ok
