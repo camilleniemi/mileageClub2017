@@ -20,7 +20,7 @@ d = merge(cards,days) %>%
             # day is the last day a card was turned in
             # but day 1 is really the 4th day, so add 3
             
-            day = max(day) + 3,
+            day = max(day), # needs to include double punch in the future
             
             # subtract 1/2 from day because the card could 
             # have been turned in any time that day
@@ -29,7 +29,7 @@ d = merge(cards,days) %>%
             ) 
 
 total_days = max(d$day)
-days_remaining = 12
+days_remaining = 9
 
 prob = function(current_miles, rate, day, days_remaining, target_miles=25) {
   if (current_miles>=target_miles) return(1)
@@ -55,3 +55,13 @@ d %>%
   merge(ids) %>%
   group_by(grade) %>% 
   summarize(n = round(sum(prob)))
+
+
+# Ignore t-shirts
+d %>%
+  merge(ids) %>%
+  group_by(grade) %>% 
+  summarize(n = round(sum(prob)))
+
+# Total
+d %>% ungroup %>% summarize(n = round(sum(prob)))
